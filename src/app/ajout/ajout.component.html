@@ -1,0 +1,21 @@
+<html>
+  <div style="text-align: center;">
+    <h1></h1>
+    <div class="name">
+      <input type="text" placeholder="enter name" [(ngModel)]="animal.name">
+    </div>
+    <div class="age">
+      <input type="number" placeholder="enter age" [(ngModel)]="animal.age">
+    </div>
+    <div class="url">
+      <input type="url" placeholder="enter image url"
+[(ngModel)]="animal.image">
+    </div>
+    <div class= "mat">
+      <input type="number" placeholder="enter matricul" [(ngModel)]="animal.mat">
+    </div>
+    <div >
+      <button (click)="add()">Ajouter</button>
+    </div>
+  </div>
+</html>

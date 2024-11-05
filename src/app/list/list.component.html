@@ -1,0 +1,27 @@
+<div style="text-align: center;">
+    <h1>Liste des animaux</h1>
+  </div>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Age</th>
+          <th scope="col">Matricul</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr scope="row" *ngFor="let item of partage.animaux">
+          <td>
+            <div>
+            <img [src]="item.image" *ngIf="display==true">
+          </div>
+        </td>
+          <td><p>{{item.name}}</p></td>
+          <td>{{item.age}}</td>
+          <td>{{item.mat}}</td>
+        </tr>
+      </tbody>
+    </table>
+  <button (click)="display=!display">Afficher</button>
+  
